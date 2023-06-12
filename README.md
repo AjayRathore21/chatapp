@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+run--> npm install .
+then you are ready to use chatapp in local server
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
