@@ -13,7 +13,7 @@ const Login = () => {
     const password = e.target[1].value;
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, email, password); // creating user on firebase using signInWithEmailAndPassword function
       navigate("/");
     } catch (err) {
       setErr(true);
@@ -22,11 +22,11 @@ const Login = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Lama Chat</span>
+        <span className="logo">ChatApp</span>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
-          <input type="email" placeholder="email" />
-          <input type="password" placeholder="password" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
           <button>Sign in</button>
           {err && <span>Something went wrong</span>}
         </form>

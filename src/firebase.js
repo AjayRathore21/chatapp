@@ -1,23 +1,21 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {getAuth} from 'firebase/auth'
-import {getStorage} from "firebase/storage"
-import {getFirestore} from 'firebase/firestore'
-
+import { getAuth } from "firebase/auth";
+import { getStorage } from "firebase/storage";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCduroyCMltI_l-ehArNXWmWugMDLJ7zvk",
-  authDomain: "react-chatapp-5c9c8.firebaseapp.com",
-  projectId: "react-chatapp-5c9c8",
-  storageBucket: "react-chatapp-5c9c8.appspot.com",
-  messagingSenderId: "598671020925",
-  appId: "1:598671020925:web:d9ebf278b492d5e1823214",
-  measurementId: "G-FHBL70T5RE",
+  apiKey: "AIzaSyCrl5rnGIISYRP3-znNgUSXPvXkoYNJ5FU",
+  authDomain: "reactchatapp-f9abe.firebaseapp.com",
+  projectId: "reactchatapp-f9abe",
+  storageBucket: "reactchatapp-f9abe.appspot.com",
+  messagingSenderId: "980927798227",
+  appId: "1:980927798227:web:240d22ed420f2291e5ad26",
+  measurementId: "G-HTH4D4TEJM",
 };
 
 // Initialize Firebase
- export const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 export const auth = getAuth();
 export const storage = getStorage();
 export const db = getFirestore();
-
